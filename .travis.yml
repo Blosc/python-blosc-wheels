@@ -8,7 +8,7 @@ env:
       # Following generated with
       # travis encrypt -r Blosc/python-blosc-wheels WHEELHOUSE_UPLOADER_SECRET=<the api key>
       - secure:
-          "TODO: @matthew-brett"
+          "zP/akrrCvIVFblJ2C/NtlXz61rp0vTbXtFyZEJ5RohVZ0OjAHPBsyXIEadqfwa3AVkcQcN0TswMqyV0oG7u+ozm+skJV3CMWqVdSoACBqI9Kk5QUzgg8KNX2h2Hi1lX2xCHCGk16QgWteAtonhAyi95uqncQdSgJouehiOpqNCmSZyELEKSSyd5Evhx5oyZSqlj0VJsx5D9jz9uw6f8ZLm0tONPVLYVfOAVpYorYE5HiGITOPFM0lfuFedVnlKHIRU9p/t8lhUJqeF0AVLr8KNRRaECRPE5SrJg7huMAztUoH7Df4i8C8ytX2neiwzY6j048eNYtsz+EyCMVRf7WXva7J320GicAzVexhnJAGgpc4vX9JK9RxgwP8LZciOvK5Fo3NoWlNKJfbJSEXgIl6WGugiu3fSPQhV1pzFL/oajjBL9cO919RDknB+UMbvGqg4CW6krHrJHPaaMfU0KU2DpK/qFNUQ1LQtcy6lg9OGzZ5RKxfXKqDDMlAQWo7K9ibsoRNfL1AaNLUhUgLpRs9vlGr1gs9nnOChd/y61ArtY67qQtkyAHgbAyJvtexvolueRgF9RT1MDLwyhOYtG2Oa2wAm79vMh6bZTJZ2kbkIru8pkI+ZqaNH30Mwf0r3vP54aFghdg8064dfK4TJ4UdMwDDQKKU3pFG8hCQ1uQzLY="
 
 language: python
 # Default Python version is usually 2.7
