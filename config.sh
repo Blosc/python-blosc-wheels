@@ -9,7 +9,14 @@ function pre_build {
 
 function run_tests {
     # Runs tests on installed distribution from an empty directory
-    pip install numpy
     python --version
-    python run_test.py
+python - <<-EOF
+import sys, blosc
+try:
+    blosc.test()
+except:
+    sys.exit(1)
+else:
+    sys.exit(0)
+EOF
 }
