@@ -81,6 +81,7 @@ before_install:
     - TEST_DEPENDS="$NP_TEST_DEP"
     - source multibuild/common_utils.sh
     - source multibuild/travis_steps.sh
+    - gcc --version
     - before_install
 
 install:
