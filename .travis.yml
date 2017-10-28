@@ -1,6 +1,6 @@
 env:
   global:
-      - REPO_DIR=blosc
+      - REPO_DIR=python-blosc
       - BUILD_COMMIT=v1.5.1
       - PLAT=x86_64
       - UNICODE_WIDTH=32
