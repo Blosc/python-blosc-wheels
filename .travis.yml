@@ -86,6 +86,7 @@ before_install:
 
 install:
     # Maybe get and clean and patch source
+    - if [ "$CC" = "gcc" ]; then export CC="gcc-4.8 -std=c++11"; fi
     - clean_code $REPO_DIR $BUILD_COMMIT
     - build_wheel $REPO_DIR $PLAT
 
