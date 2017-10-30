@@ -23,40 +23,110 @@ matrix:
       - python: 3.5
   include:
     - os: linux
+      addons:
+        apt:
+          sources:
+            - ubuntu-toolchain-r-test
+          packages:
+            - g++-4.9
       env:
+        - MATRIX_EVAL="CC=gcc-4.9 && CXX=g++-4.9"
         - MB_PYTHON_VERSION=2.7
     - os: linux
+      addons:
+        apt:
+          sources:
+            - ubuntu-toolchain-r-test
+          packages:
+            - g++-4.9
       env:
+        - MATRIX_EVAL="CC=gcc-4.9 && CXX=g++-4.9"
         - MB_PYTHON_VERSION=2.7
         - UNICODE_WIDTH=16
     - os: linux
+      addons:
+        apt:
+          sources:
+            - ubuntu-toolchain-r-test
+          packages:
+            - g++-4.9
       env:
+        - MATRIX_EVAL="CC=gcc-4.9 && CXX=g++-4.9"
         - MB_PYTHON_VERSION=2.7
         - PLAT=i686
     - os: linux
+      addons:
+        apt:
+          sources:
+            - ubuntu-toolchain-r-test
+          packages:
+            - g++-4.9
       env:
+        - MATRIX_EVAL="CC=gcc-4.9 && CXX=g++-4.9"
         - MB_PYTHON_VERSION=2.7
         - PLAT=i686
         - UNICODE_WIDTH=16
     - os: linux
+      addons:
+        apt:
+          sources:
+            - ubuntu-toolchain-r-test
+          packages:
+            - g++-4.9
       env:
+        - MATRIX_EVAL="CC=gcc-4.9 && CXX=g++-4.9"
         - MB_PYTHON_VERSION=3.4
     - os: linux
+      addons:
+        apt:
+          sources:
+            - ubuntu-toolchain-r-test
+          packages:
+            - g++-4.9
       env:
+        - MATRIX_EVAL="CC=gcc-4.9 && CXX=g++-4.9"
         - MB_PYTHON_VERSION=3.4
         - PLAT=i686
     - os: linux
+      addons:
+        apt:
+          sources:
+            - ubuntu-toolchain-r-test
+          packages:
+            - g++-4.9
       env:
+        - MATRIX_EVAL="CC=gcc-4.9 && CXX=g++-4.9"
         - MB_PYTHON_VERSION=3.5
     - os: linux
+      addons:
+        apt:
+          sources:
+            - ubuntu-toolchain-r-test
+          packages:
+            - g++-4.9
       env:
+        - MATRIX_EVAL="CC=gcc-4.9 && CXX=g++-4.9"
         - MB_PYTHON_VERSION=3.5
         - PLAT=i686
     - os: linux
+      addons:
+        apt:
+          sources:
+            - ubuntu-toolchain-r-test
+          packages:
+            - g++-4.9
       env:
+        - MATRIX_EVAL="CC=gcc-4.9 && CXX=g++-4.9"
         - MB_PYTHON_VERSION=3.6
     - os: linux
+      addons:
+        apt:
+          sources:
+            - ubuntu-toolchain-r-test
+          packages:
+            - g++-4.9
       env:
+        - MATRIX_EVAL="CC=gcc-4.9 && CXX=g++-4.9"
         - MB_PYTHON_VERSION=3.6
         - PLAT=i686
     - os: osx
