@@ -28,9 +28,9 @@ matrix:
           sources:
             - ubuntu-toolchain-r-test
           packages:
-            - g++-4.9
+            - g++-5.4
       env:
-        - MATRIX_EVAL="CC=gcc-4.9 && CXX=g++-4.9"
+        - MATRIX_EVAL="CC=gcc-5.4 -std=c++11 && CXX=g++-5.4"
         - MB_PYTHON_VERSION=2.7
     - os: linux
       addons:
@@ -38,9 +38,9 @@ matrix:
           sources:
             - ubuntu-toolchain-r-test
           packages:
-            - g++-4.9
+            - g++-5.4
       env:
-        - MATRIX_EVAL="CC=gcc-4.9 && CXX=g++-4.9"
+        - MATRIX_EVAL="CC=gcc-5.4 -std=c++11 && CXX=g++-5.4"
         - MB_PYTHON_VERSION=2.7
         - UNICODE_WIDTH=16
     - os: linux
@@ -49,9 +49,9 @@ matrix:
           sources:
             - ubuntu-toolchain-r-test
           packages:
-            - g++-4.9
+            - g++-5.4
       env:
-        - MATRIX_EVAL="CC=gcc-4.9 && CXX=g++-4.9"
+        - MATRIX_EVAL="CC=gcc-5.4 -std=c++11 && CXX=g++-5.4"
         - MB_PYTHON_VERSION=2.7
         - PLAT=i686
     - os: linux
@@ -60,9 +60,9 @@ matrix:
           sources:
             - ubuntu-toolchain-r-test
           packages:
-            - g++-4.9
+            - g++-5.4
       env:
-        - MATRIX_EVAL="CC=gcc-4.9 && CXX=g++-4.9"
+        - MATRIX_EVAL="CC=gcc-5.4 -std=c++11 && CXX=g++-5.4"
         - MB_PYTHON_VERSION=2.7
         - PLAT=i686
         - UNICODE_WIDTH=16
@@ -72,9 +72,9 @@ matrix:
           sources:
             - ubuntu-toolchain-r-test
           packages:
-            - g++-4.9
+            - g++-5.4
       env:
-        - MATRIX_EVAL="CC=gcc-4.9 && CXX=g++-4.9"
+        - MATRIX_EVAL="CC=gcc-5.4 -std=c++11 && CXX=g++-5.4"
         - MB_PYTHON_VERSION=3.4
     - os: linux
       addons:
@@ -82,9 +82,9 @@ matrix:
           sources:
             - ubuntu-toolchain-r-test
           packages:
-            - g++-4.9
+            - g++-5.4
       env:
-        - MATRIX_EVAL="CC=gcc-4.9 && CXX=g++-4.9"
+        - MATRIX_EVAL="CC=gcc-5.4 -std=c++11 && CXX=g++-5.4"
         - MB_PYTHON_VERSION=3.4
         - PLAT=i686
     - os: linux
@@ -93,9 +93,9 @@ matrix:
           sources:
             - ubuntu-toolchain-r-test
           packages:
-            - g++-4.9
+            - g++-5.4
       env:
-        - MATRIX_EVAL="CC=gcc-4.9 && CXX=g++-4.9"
+        - MATRIX_EVAL="CC=gcc-5.4 -std=c++11 && CXX=g++-5.4"
         - MB_PYTHON_VERSION=3.5
     - os: linux
       addons:
@@ -103,9 +103,9 @@ matrix:
           sources:
             - ubuntu-toolchain-r-test
           packages:
-            - g++-4.9
+            - g++-5.4
       env:
-        - MATRIX_EVAL="CC=gcc-4.9 && CXX=g++-4.9"
+        - MATRIX_EVAL="CC=gcc-5.4 -std=c++11 && CXX=g++-5.4"
         - MB_PYTHON_VERSION=3.5
         - PLAT=i686
     - os: linux
@@ -114,9 +114,9 @@ matrix:
           sources:
             - ubuntu-toolchain-r-test
           packages:
-            - g++-4.9
+            - g++-5.4
       env:
-        - MATRIX_EVAL="CC=gcc-4.9 && CXX=g++-4.9"
+        - MATRIX_EVAL="CC=gcc-5.4 -std=c++11 && CXX=g++-5.4"
         - MB_PYTHON_VERSION=3.6
     - os: linux
       addons:
@@ -124,9 +124,9 @@ matrix:
           sources:
             - ubuntu-toolchain-r-test
           packages:
-            - g++-4.9
+            - g++-5.4
       env:
-        - MATRIX_EVAL="CC=gcc-4.9 && CXX=g++-4.9"
+        - MATRIX_EVAL="CC=gcc-5.4 -std=c++11 && CXX=g++-5.4"
         - MB_PYTHON_VERSION=3.6
         - PLAT=i686
     - os: osx
@@ -156,7 +156,6 @@ before_install:
 
 install:
     # Maybe get and clean and patch source
-    - if [ "$CC" = "gcc" ]; then export CC="gcc-4.8 -std=c++11"; fi
     - clean_code $REPO_DIR $BUILD_COMMIT
     - build_wheel $REPO_DIR $PLAT
 
